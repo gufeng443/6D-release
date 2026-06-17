@@ -1,0 +1,12 @@
+*.zip
+*.exe
+*.msi
+*.7z
+*.tmp
+*.log
+dist/
+build/
+node_modules/
+.env
+.env.*
+.DS_Store

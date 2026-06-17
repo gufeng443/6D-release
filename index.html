@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6D 桌面工作台下载</title>
+  <meta name="description" content="6D 桌面工作台 Windows 版本下载与更新通道。">
+  <style>
+    :root {
+      --bg: #eef4fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fbff;
+      --text: #111827;
+      --muted: #5f6f82;
+      --line: #d7e2ee;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --success: #059669;
+      --warning: #b45309;
+      --shadow: 0 18px 48px rgba(15, 23, 42, .12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(248, 251, 255, .92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+    .topbar-inner, .section {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    .topbar-inner {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+    .mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: var(--primary);
+      font-weight: 900;
+    }
+    .nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .nav a {
+      padding: 8px 12px;
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 600;
+      border-radius: 8px;
+    }
+    .nav a:hover { background: #e7eef8; color: var(--text); }
+    .hero { padding: 54px 0 34px; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .88fr) minmax(360px, 1.12fr);
+      gap: 34px;
+      align-items: center;
+    }
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(34px, 5vw, 60px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .lead {
+      margin: 0 0 26px;
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--text);
+      font-weight: 800;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, .06);
+    }
+    .btn.primary {
+      border-color: var(--primary);
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn.primary:hover { background: var(--primary-dark); }
+    .btn:hover { transform: translateY(-1px); }
+    .version-card {
+      margin-top: 24px;
+      width: min(520px, 100%);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, .08);
+    }
+    .status-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 9px 0;
+      border-bottom: 1px solid #edf2f7;
+    }
+    .status-row:last-child { border-bottom: 0; }
+    .label { color: var(--muted); }
+    .value { font-weight: 800; text-align: right; }
+    .value.ok { color: var(--success); }
+    .value.wait { color: var(--warning); }
+    .preview {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 14px;
+      box-shadow: var(--shadow);
+    }
+    .preview img {
+      width: 100%;
+      display: block;
+      border-radius: 16px;
+    }
+    .section { padding: 34px 0; }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, .06);
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 28px;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+    p { margin: 0; color: var(--muted); }
+    .steps {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .num {
+      flex: 0 0 auto;
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      display: grid;
+      place-items: center;
+      background: #eaf2ff;
+      color: var(--primary);
+      font-weight: 900;
+    }
+    .foot {
+      padding: 30px 0 44px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+    code {
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: #eef2f7;
+      color: #1f2937;
+      font-family: Consolas, monospace;
+    }
+    @media (max-width: 920px) {
+      .hero-grid, .grid-3, .steps { grid-template-columns: 1fr; }
+      .hero { padding-top: 34px; }
+      .preview { order: -1; }
+    }
+    @media (max-width: 560px) {
+      .topbar-inner { align-items: flex-start; flex-direction: column; padding: 12px 0; }
+      .nav { justify-content: flex-start; }
+      .btn { width: 100%; }
+      .actions { width: 100%; }
+      .status-row { flex-direction: column; gap: 2px; }
+      .value { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="mark">6D</span><span>6D 桌面工作台</span></div>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#download">下载</a>
+        <a href="#install">安装</a>
+        <a href="#update">更新</a>
+        <a href="https://github.com/gufeng443/6D-release/releases">Release</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero">
+      <div class="hero-grid">
+        <div>
+          <h1>6D 桌面工作台</h1>
+          <p class="lead">面向 Windows 的授权版桌面工具发布页。这里仅提供已审核的安装包、版本说明和更新清单，不存放源码、服务端或管理后台。</p>
+          <div class="actions" id="download">
+            <a class="btn primary" id="downloadLink" href="https://github.com/gufeng443/6D-release/releases/latest">下载最新版</a>
+            <a class="btn" href="https://github.com/gufeng443/6D-release/releases">查看历史版本</a>
+          </div>
+          <div class="version-card" aria-live="polite">
+            <div class="status-row"><span class="label">当前发布</span><span class="value wait" id="versionText">等待 v0.4.0 包完成</span></div>
+            <div class="status-row"><span class="label">更新通道</span><span class="value" id="channelText">stable</span></div>
+            <div class="status-row"><span class="label">文件校验</span><span class="value" id="hashText">发布后显示 SHA-256</span></div>
+          </div>
+        </div>
+        <figure class="preview">
+          <img src="assets/preview.svg" alt="6D 桌面工作台界面预览">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>发布内容</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>完整目录运行</h3>
+          <p>下载 zip 后解压整个文件夹运行 <code>gui.exe</code>。不要只复制单个 exe，程序还需要随包资源和 ADB。</p>
+        </article>
+        <article class="card">
+          <h3>授权校验</h3>
+          <p>程序启动前会进行授权和完整性检查。未激活、过期或运行环境异常时不会进入主工作台。</p>
+        </article>
+        <article class="card">
+          <h3>安全边界</h3>
+          <p>公开仓库只放发布包和更新清单。源码、Cloudflare Worker、Admin Token 和账号数据不进入此仓库。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="install">
+      <h2>安装步骤</h2>
+      <div class="steps">
+        <div class="card step"><span class="num">1</span><p>从 GitHub Release 下载最新版 <code>6D-v*-windows-x64.zip</code>。</p></div>
+        <div class="card step"><span class="num">2</span><p>解压到固定目录，例如桌面或工作盘目录，保持文件夹结构完整。</p></div>
+        <div class="card step"><span class="num">3</span><p>运行 <code>gui.exe</code>，根据授权页输入激活码完成绑定。</p></div>
+        <div class="card step"><span class="num">4</span><p>如遇更新提示，返回本页下载新版覆盖到新目录后运行。</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="update">
+      <h2>更新说明</h2>
+      <div class="card">
+        <p>客户端通过 <code>latest.json</code> 读取最新版本。正式包发布前，本页不会写入可触发更新的清单，避免用户下载到未验收版本。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">6D Release Channel · Public downloads only</footer>
+
+  <script>
+    async function loadLatest() {
+      try {
+        const response = await fetch("latest.json", { cache: "no-store" });
+        if (!response.ok) return;
+        const data = await response.json();
+        const download = document.getElementById("downloadLink");
+        const version = document.getElementById("versionText");
+        const channel = document.getElementById("channelText");
+        const hash = document.getElementById("hashText");
+        if (data.download_url) download.href = data.download_url;
+        if (data.version) {
+          version.textContent = "v" + data.version;
+          version.className = "value ok";
+        }
+        if (data.channel) channel.textContent = data.channel;
+        if (data.sha256) hash.textContent = data.sha256.slice(0, 16) + "...";
+      } catch (_) {
+        // latest.json is intentionally absent before the approved package is published.
+      }
+    }
+    loadLatest();
+  </script>
+</body>
+</html>
