@@ -1,11 +1,11 @@
 {
-    "version":  "0.5.0",
-    "channel":  "stable",
-    "download_url":  "https://github.com/gufeng443/6D-release/releases/download/v0.5.0/6D-v0.5.0-windows-x64.zip",
-    "sha256":  "fc361f100820a71e948613c004a483d8d6e4c857adbdf6e40834b533602c733a",
-    "size":  19125660,
-    "min_supported_version":  "0.3.0",
-    "force_update":  false,
-    "notes":  "6D v0.5.0: WhatsApp Business support and UI polish. Contact-sync helper APK is bundled for batch friend sync; no app update/download feature is included.",
-    "published_at":  "2026-06-18T20:00:22Z"
+  "version": "0.5.1",
+  "channel": "stable",
+  "download_url": "https://github.com/gufeng443/6D-release/releases/download/v0.5.1/6D-v0.5.1-windows-x64.zip",
+  "sha256": "57ef7ae378f52af5421224a046859df4de3c4ba69f3f266b0aeaebe6d58e70f1",
+  "size": 19190335,
+  "min_supported_version": "0.3.0",
+  "force_update": false,
+  "notes": "6D v0.5.1: fixes default update reminder URL and delivers the packaged app as 6D.exe with embedded icon. Contact-sync helper APK is bundled for batch friend sync; no app update/download feature is included.",
+  "published_at": "2026-06-18T20:47:38Z"
 }
