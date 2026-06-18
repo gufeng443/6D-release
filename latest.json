@@ -1,0 +1,11 @@
+{
+    "version":  "0.4.1",
+    "channel":  "stable",
+    "download_url":  "https://github.com/gufeng443/6D-release/releases/download/v0.4.1/6D-v0.4.1-windows-x64.zip",
+    "sha256":  "d50975a9cf1277880a2841173ca9c29914565bfb2567a9e2b8470e4e73a0cad5",
+    "size":  19119198,
+    "min_supported_version":  "0.3.0",
+    "force_update":  false,
+    "notes":  "6D v0.4.1: packaged GUI startup fix and v0.4.0 feature release.",
+    "published_at":  "2026-06-18T17:31:16Z"
+}
