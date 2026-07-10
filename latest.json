@@ -1,11 +1,11 @@
 {
-  "version": "0.5.1",
+  "version": "0.6.0",
   "channel": "stable",
-  "download_url": "https://github.com/gufeng443/6D-release/releases/download/v0.5.1/6D-v0.5.1-windows-x64.zip",
-  "sha256": "57ef7ae378f52af5421224a046859df4de3c4ba69f3f266b0aeaebe6d58e70f1",
-  "size": 19190335,
+  "download_url": "https://github.com/gufeng443/6D-release/releases/download/v0.6.0/6D-v0.6.0-windows-x64.zip",
+  "sha256": "80cce772c64fc8819ccbb3302b533f951957df56aab937e1a2ce2f3871a91868",
+  "size": 19286954,
   "min_supported_version": "0.3.0",
   "force_update": false,
-  "notes": "6D v0.5.1: fixes default update reminder URL and delivers the packaged app as 6D.exe with embedded icon. Contact-sync helper APK is bundled for batch friend sync; no app update/download feature is included.",
-  "published_at": "2026-06-18T20:47:38Z"
+  "notes": "6D v0.6.0：修复新电脑运行依赖与打包态误阻断；操作失败现在提供可见提示；完善完整包、商业版流程与授权使用记录。",
+  "published_at": "2026-07-10T18:54:17Z"
 }

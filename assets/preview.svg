@@ -1,115 +1,80 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1240" height="860" viewBox="0 0 1240 860" role="img" aria-labelledby="title desc">
   <title id="title">6D 桌面工作台界面预览</title>
-  <desc id="desc">展示 6D 桌面工作台的设备列表、主表格区域、工具栏与批量操作侧栏。</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f8fbff"/>
-      <stop offset="100%" stop-color="#eef4fb"/>
-    </linearGradient>
-    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3b82f6"/>
-      <stop offset="100%" stop-color="#2563eb"/>
-    </linearGradient>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#0f172a" flood-opacity=".08"/>
-    </filter>
-  </defs>
+  <desc id="desc">展示设备列表、资料表格和批量操作区，不包含账号或授权信息。</desc>
+  <rect width="1240" height="860" fill="#e7ebe9"/>
+  <rect x="56" y="44" width="1128" height="772" rx="8" fill="#ffffff" stroke="#bdc8c3"/>
+  <rect x="56" y="44" width="1128" height="76" rx="8" fill="#17201d"/>
+  <rect x="56" y="112" width="1128" height="8" fill="#17201d"/>
 
-  <rect width="1240" height="860" fill="url(#bg)"/>
-  <circle cx="1080" cy="90" r="180" fill="#dbeafe" opacity=".38"/>
-  <circle cx="1180" cy="40" r="100" fill="#eff6ff" opacity=".9"/>
+  <rect x="84" y="64" width="38" height="38" rx="6" fill="#176b50"/>
+  <text x="103" y="89" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="15" font-weight="800" fill="#ffffff">6D</text>
+  <text x="140" y="90" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="24" font-weight="750" fill="#ffffff">6D 桌面工作台</text>
+  <circle cx="1071" cy="82" r="6" fill="#54c99a"/>
+  <text x="1090" y="89" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="15" fill="#dce5e1">工作台已就绪</text>
 
-  <rect x="84" y="72" width="1072" height="716" rx="28" fill="#ffffff" stroke="#dbe5f0" filter="url(#shadow)"/>
-  <rect x="84" y="72" width="1072" height="5" rx="2.5" fill="#2563eb"/>
+  <rect x="78" y="144" width="252" height="640" rx="6" fill="#f4f6f5" stroke="#d8dedb"/>
+  <text x="104" y="187" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="19" font-weight="750" fill="#17201d">在线设备</text>
+  <text x="104" y="216" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" fill="#68736e">选择一台或多台设备</text>
+  <rect x="104" y="240" width="200" height="42" rx="6" fill="#176b50"/>
+  <text x="204" y="267" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="15" font-weight="700" fill="#ffffff">刷新设备</text>
 
-  <rect x="84" y="72" width="1072" height="128" rx="28" fill="#fbfdff"/>
-  <path d="M998 72h122l36 40v88H1066z" fill="#eef4ff"/>
-  <text x="124" y="144" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="42" font-weight="800" fill="#0f172a">6D 工作台</text>
-  <text x="124" y="184" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" fill="#64748b">桌面工具 · 已通过授权后进入主工作台</text>
+  <rect x="104" y="310" width="200" height="74" rx="6" fill="#e7f1ed" stroke="#8eb8a8"/>
+  <rect x="118" y="327" width="18" height="18" rx="3" fill="#176b50"/>
+  <path d="M122 336l4 4 7-8" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="150" y="343" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="17" font-weight="750" fill="#17201d">模拟器 01</text>
+  <text x="150" y="368" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="13" fill="#5f6965">在线 · 已选择</text>
 
-  <text x="724" y="132" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="16" fill="#64748b">授权状态</text>
-  <text x="724" y="172" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="28" font-weight="800" fill="#15803d">已激活</text>
+  <rect x="104" y="396" width="200" height="74" rx="6" fill="#ffffff" stroke="#d8dedb"/>
+  <rect x="118" y="413" width="18" height="18" rx="3" fill="#ffffff" stroke="#a8b2ad"/>
+  <text x="150" y="429" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="17" font-weight="750" fill="#17201d">模拟器 02</text>
+  <text x="150" y="454" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="13" fill="#5f6965">在线</text>
 
-  <text x="914" y="132" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="16" fill="#64748b">到期时间</text>
-  <text x="914" y="172" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="22" font-weight="700" fill="#0f172a">2027-06-14 04:32:04 北京时间</text>
+  <rect x="104" y="482" width="200" height="74" rx="6" fill="#ffffff" stroke="#d8dedb"/>
+  <rect x="118" y="499" width="18" height="18" rx="3" fill="#ffffff" stroke="#a8b2ad"/>
+  <text x="150" y="515" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="17" font-weight="750" fill="#17201d">模拟器 03</text>
+  <text x="150" y="540" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="13" fill="#5f6965">在线</text>
 
-  <text x="1104" y="132" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="16" text-anchor="end" fill="#64748b">机器短码</text>
-  <rect x="970" y="142" width="134" height="50" rx="12" fill="#eaf1ff"/>
-  <text x="1037" y="174" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="22" font-weight="800" text-anchor="middle" fill="#1d4ed8">6D-B394...</text>
+  <text x="104" y="746" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" font-weight="700" fill="#176b50">已选择 1 台设备</text>
 
-  <rect x="104" y="222" width="238" height="526" rx="18" fill="#ffffff" stroke="#dbe5f0"/>
-  <text x="128" y="270" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="700" fill="#0f172a">在线设备</text>
-  <text x="128" y="305" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" fill="#64748b">多选设备列表</text>
-  <rect x="224" y="248" width="96" height="44" rx="12" fill="#f8fbff" stroke="#dbe5f0"/>
-  <text x="272" y="276" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="16" font-weight="700" text-anchor="middle" fill="#0f172a">刷新设备</text>
-  <text x="128" y="360" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="16" fill="#64748b">设备</text>
-  <text x="244" y="360" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="16" text-anchor="end" fill="#64748b">详情</text>
+  <rect x="354" y="144" width="548" height="640" rx="6" fill="#ffffff" stroke="#d8dedb"/>
+  <text x="380" y="187" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="19" font-weight="750" fill="#17201d">账号资料</text>
+  <rect x="690" y="160" width="86" height="36" rx="6" fill="#176b50"/>
+  <text x="733" y="183" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" font-weight="700" fill="#ffffff">提取资料</text>
+  <rect x="786" y="160" width="88" height="36" rx="6" fill="#ffffff" stroke="#bdc8c3"/>
+  <text x="830" y="183" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" font-weight="700" fill="#17201d">保存表格</text>
 
-  <rect x="124" y="382" width="198" height="62" rx="12" fill="url(#blue)"/>
-  <text x="148" y="418" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="22" font-weight="800" fill="#ffffff">雷电-1</text>
-  <text x="148" y="438" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" fill="#dbeafe">emulator-5556 / 在线</text>
+  <rect x="380" y="222" width="496" height="48" rx="6" fill="#edf0ef"/>
+  <text x="402" y="252" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" font-weight="700" fill="#17201d">设备</text>
+  <text x="534" y="252" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" font-weight="700" fill="#17201d">类型</text>
+  <text x="666" y="252" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" font-weight="700" fill="#17201d">状态</text>
+  <text x="788" y="252" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" font-weight="700" fill="#17201d">结果</text>
 
-  <rect x="124" y="456" width="198" height="62" rx="12" fill="#ffffff" stroke="#dbe5f0"/>
-  <text x="148" y="492" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="22" font-weight="700" fill="#0f172a">MuMu-1</text>
-  <text x="148" y="512" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" fill="#64748b">127.0.0.1:7555 / 在线</text>
+  <g font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" fill="#5f6965">
+    <line x1="380" y1="326" x2="876" y2="326" stroke="#e2e6e4"/>
+    <line x1="380" y1="382" x2="876" y2="382" stroke="#e2e6e4"/>
+    <line x1="380" y1="438" x2="876" y2="438" stroke="#e2e6e4"/>
+    <text x="402" y="306">模拟器 01</text><text x="534" y="306">个人版</text><text x="666" y="306">已连接</text><text x="788" y="306" fill="#176b50">可操作</text>
+    <text x="402" y="362">模拟器 02</text><text x="534" y="362">商业版</text><text x="666" y="362">已连接</text><text x="788" y="362" fill="#176b50">可操作</text>
+    <text x="402" y="418">模拟器 03</text><text x="534" y="418">个人版</text><text x="666" y="418">已连接</text><text x="788" y="418" fill="#176b50">可操作</text>
+  </g>
 
-  <rect x="124" y="530" width="198" height="62" rx="12" fill="#ffffff" stroke="#dbe5f0"/>
-  <text x="148" y="566" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="22" font-weight="700" fill="#0f172a">MuMu-2</text>
-  <text x="148" y="586" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" fill="#64748b">127.0.0.1:7561 / 在线</text>
+  <rect x="380" y="476" width="496" height="270" rx="6" fill="#f8f9f8" stroke="#e2e6e4"/>
+  <text x="628" y="588" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="17" font-weight="700" fill="#5f6965">选择设备后开始操作</text>
+  <text x="628" y="620" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" fill="#7a847f">资料将在此处以表格方式显示</text>
 
-  <text x="128" y="730" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="16" font-weight="700" fill="#1d4ed8">已选 2 台：雷电-1、MuMu-1</text>
-
-  <rect x="364" y="222" width="572" height="526" rx="18" fill="#ffffff" stroke="#dbe5f0"/>
-  <rect x="388" y="256" width="94" height="42" rx="12" fill="#ecfdf5"/>
-  <text x="435" y="283" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="800" text-anchor="middle" fill="#15803d">计数: 3</text>
-
-  <rect x="494" y="256" width="146" height="42" rx="12" fill="url(#blue)"/>
-  <text x="567" y="283" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="800" text-anchor="middle" fill="#ffffff">提取账号数据</text>
-
-  <rect x="652" y="256" width="86" height="42" rx="12" fill="#f8fbff" stroke="#dbe5f0"/>
-  <text x="695" y="283" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="700" text-anchor="middle" fill="#0f172a">保存</text>
-
-  <rect x="750" y="256" width="86" height="42" rx="12" fill="#dc2626"/>
-  <text x="793" y="283" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="700" text-anchor="middle" fill="#ffffff">清空</text>
-
-  <rect x="388" y="322" width="524" height="388" rx="14" fill="#f8fbff" stroke="#dbe5f0"/>
-  <rect x="388" y="322" width="524" height="56" rx="14" fill="#eaf1ff"/>
-  <text x="436" y="356" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="800" fill="#0f172a">Number</text>
-  <text x="626" y="356" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="800" fill="#0f172a">Key1</text>
-  <text x="776" y="356" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="800" fill="#0f172a">Key2</text>
-
-  <text x="436" y="430" font-family="Consolas, monospace" font-size="18" fill="#0f172a">8613800000001</text>
-  <text x="626" y="430" font-family="Consolas, monospace" font-size="18" fill="#0f172a">KeyA</text>
-  <text x="776" y="430" font-family="Consolas, monospace" font-size="18" fill="#0f172a">KeyB</text>
-
-  <text x="436" y="482" font-family="Consolas, monospace" font-size="18" fill="#0f172a">8613800000002</text>
-  <text x="626" y="482" font-family="Consolas, monospace" font-size="18" fill="#0f172a">KeyC</text>
-  <text x="776" y="482" font-family="Consolas, monospace" font-size="18" fill="#0f172a">KeyD</text>
-
-  <text x="436" y="534" font-family="Consolas, monospace" font-size="18" fill="#0f172a">8613800000003</text>
-  <text x="626" y="534" font-family="Consolas, monospace" font-size="18" fill="#0f172a">KeyE</text>
-  <text x="776" y="534" font-family="Consolas, monospace" font-size="18" fill="#0f172a">KeyF</text>
-
-  <rect x="956" y="222" width="180" height="526" rx="18" fill="#ffffff" stroke="#dbe5f0"/>
-  <text x="980" y="270" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="30" font-weight="800" fill="#0f172a">操作</text>
-  <text x="980" y="306" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" fill="#64748b">保留稳定可交付功能</text>
-  <text x="980" y="360" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="700" fill="#64748b">导入导出</text>
-
-  <rect x="980" y="388" width="132" height="52" rx="12" fill="#f8fbff"/>
-  <text x="1046" y="421" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="700" text-anchor="middle" fill="#0f172a">解析协议号</text>
-
-  <rect x="980" y="452" width="132" height="52" rx="12" fill="#f8fbff"/>
-  <text x="1046" y="485" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="700" text-anchor="middle" fill="#0f172a">单账号导入</text>
-
-  <rect x="980" y="516" width="132" height="52" rx="12" fill="#7f1d1d"/>
-  <text x="1046" y="549" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="700" text-anchor="middle" fill="#ffffff">重置模拟器</text>
-
-  <line x1="980" y1="590" x2="1112" y2="590" stroke="#cbd5e1"/>
-  <text x="980" y="608" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="700" fill="#64748b">批量</text>
-
-  <rect x="980" y="622" width="132" height="52" rx="12" fill="#f8fbff"/>
-  <text x="1046" y="655" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="700" text-anchor="middle" fill="#0f172a">批量账号导入</text>
-
-  <rect x="980" y="686" width="132" height="52" rx="12" fill="#f8fbff"/>
-  <text x="1046" y="719" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="18" font-weight="700" text-anchor="middle" fill="#0f172a">批量同步好友</text>
+  <rect x="926" y="144" width="230" height="640" rx="6" fill="#f8f4ef" stroke="#ddd2c9"/>
+  <text x="952" y="187" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="19" font-weight="750" fill="#17201d">操作</text>
+  <text x="952" y="216" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="14" fill="#746b64">个人版 / 商业版</text>
+  <rect x="952" y="246" width="178" height="44" rx="6" fill="#ffffff" stroke="#d8dedb"/>
+  <text x="1041" y="274" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="15" font-weight="700" fill="#17201d">解析数据包</text>
+  <rect x="952" y="302" width="178" height="44" rx="6" fill="#ffffff" stroke="#d8dedb"/>
+  <text x="1041" y="330" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="15" font-weight="700" fill="#17201d">单账号导入</text>
+  <rect x="952" y="358" width="178" height="44" rx="6" fill="#ffffff" stroke="#d8dedb"/>
+  <text x="1041" y="386" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="15" font-weight="700" fill="#17201d">完整包导出</text>
+  <line x1="952" y1="438" x2="1130" y2="438" stroke="#d8c9bd"/>
+  <text x="952" y="478" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="15" font-weight="750" fill="#a94e31">批量操作</text>
+  <rect x="952" y="500" width="178" height="44" rx="6" fill="#ffffff" stroke="#d8dedb"/>
+  <text x="1041" y="528" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="15" font-weight="700" fill="#17201d">批量账号导入</text>
+  <rect x="952" y="556" width="178" height="44" rx="6" fill="#a94e31"/>
+  <text x="1041" y="584" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="15" font-weight="700" fill="#ffffff">批量同步</text>
 </svg>
