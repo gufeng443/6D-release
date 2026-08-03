@@ -1,11 +1,11 @@
 {
-  "version": "0.6.3",
+  "version": "0.6.4",
   "channel": "stable",
-  "download_url": "https://github.com/gufeng443/6D-release/releases/download/v0.6.3/6D-v0.6.3-windows-x64.zip",
-  "sha256": "25ef2504948f2c23170e6c00df9866330c8f4ef5c12f3daa61d5ce0a014be2ba",
-  "size": 19260918,
+  "download_url": "https://github.com/gufeng443/6D-release/releases/download/v0.6.4/6D-v0.6.4-windows-x64.zip",
+  "sha256": "cfef572297afd0b7a441c3f28062c15706eed34c00b6e9b47642b0b2e16b17f0",
+  "size": 19267370,
   "min_supported_version": "0.3.0",
   "force_update": false,
-  "notes": "6D v0.6.3：全参转6段现在会自动保存为原文件名_6段_数量N.txt；批量文件中缺少 clientStatic key 的不完整记录会被跳过，其余完整记录继续转换。",
-  "published_at": "2026-08-03T07:24:45Z"
+  "notes": "6D v0.6.4：导入/生成账号后默认中文界面；账号名称改为随机英文或西班牙语名字，不再使用模板固定名称。",
+  "published_at": "2026-08-03T16:01:05Z"
 }
