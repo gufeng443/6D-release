@@ -1,11 +1,11 @@
 {
-  "version": "0.6.1",
+  "version": "0.6.3",
   "channel": "stable",
-  "download_url": "https://github.com/gufeng443/6D-release/releases/download/v0.6.1/6D-v0.6.1-windows-x64.zip",
-  "sha256": "1ebdfef544218a3ef00ba8ffe02436b577ab2db8d2816a7993e6c4dbbad35289",
-  "size": 19256513,
+  "download_url": "https://github.com/gufeng443/6D-release/releases/download/v0.6.3/6D-v0.6.3-windows-x64.zip",
+  "sha256": "25ef2504948f2c23170e6c00df9866330c8f4ef5c12f3daa61d5ce0a014be2ba",
+  "size": 19260918,
   "min_supported_version": "0.3.0",
   "force_update": false,
-  "notes": "6D v0.6.1：新增全参账号 TXT/JSON 一键转换为 6段协议号；修复 messKey1 33字节前缀和短 ID 兼容解析；已通过模拟器1导入实测。",
-  "published_at": "2026-08-03T06:58:36Z"
+  "notes": "6D v0.6.3：全参转6段现在会自动保存为原文件名_6段_数量N.txt；批量文件中缺少 clientStatic key 的不完整记录会被跳过，其余完整记录继续转换。",
+  "published_at": "2026-08-03T07:24:45Z"
 }
