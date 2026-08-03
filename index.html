@@ -711,8 +711,8 @@
           </article>
           <article class="workflow-card">
             <span class="workflow-index">02</span>
-            <h3>账号资料整理</h3>
-            <p>提取当前设备中的账号资料，在表格中查看并按需保存。</p>
+            <h3>账号资料整理与转换</h3>
+            <p>提取当前设备中的账号资料，也可将全参 TXT/JSON 转换为标准 6 段协议号后再导入。</p>
           </article>
           <article class="workflow-card">
             <span class="workflow-index">03</span>
@@ -812,6 +812,10 @@
             <dd id="publishedText">读取中</dd>
           </div>
           <div class="release-row">
+            <dt>本次更新</dt>
+            <dd id="notesText">读取中</dd>
+          </div>
+          <div class="release-row">
             <dt>SHA-256</dt>
             <dd><code class="hash-value" id="hashText">读取中</code></dd>
           </div>
@@ -871,6 +875,7 @@
       const sizeText = document.getElementById("sizeText");
       const channelText = document.getElementById("channelText");
       const publishedText = document.getElementById("publishedText");
+      const notesText = document.getElementById("notesText");
       const hashText = document.getElementById("hashText");
 
       downloadLink.href = fallbackReleaseUrl;
@@ -893,6 +898,7 @@
         sizeText.textContent = size;
         channelText.textContent = formatChannel(data.channel);
         publishedText.textContent = formatPublishedAt(data.published_at);
+        notesText.textContent = typeof data.notes === "string" && data.notes ? data.notes : "未提供";
         hashText.textContent = typeof data.sha256 === "string" && data.sha256 ? data.sha256 : "未提供";
         setReleaseState("当前发布信息已就绪");
       } catch (_) {
@@ -902,6 +908,7 @@
         sizeText.textContent = "未读取";
         channelText.textContent = "未读取";
         publishedText.textContent = "请以 Releases 最新页为准";
+        notesText.textContent = "未读取";
         hashText.textContent = "latest.json 读取失败";
         setReleaseState("发布信息读取失败，已使用 Releases 下载页", true);
       }

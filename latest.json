@@ -1,11 +1,11 @@
 {
-  "version": "0.6.0",
+  "version": "0.6.1",
   "channel": "stable",
-  "download_url": "https://github.com/gufeng443/6D-release/releases/download/v0.6.0/6D-v0.6.0-windows-x64.zip",
-  "sha256": "80cce772c64fc8819ccbb3302b533f951957df56aab937e1a2ce2f3871a91868",
-  "size": 19286954,
+  "download_url": "https://github.com/gufeng443/6D-release/releases/download/v0.6.1/6D-v0.6.1-windows-x64.zip",
+  "sha256": "1ebdfef544218a3ef00ba8ffe02436b577ab2db8d2816a7993e6c4dbbad35289",
+  "size": 19256513,
   "min_supported_version": "0.3.0",
   "force_update": false,
-  "notes": "6D v0.6.0：修复新电脑运行依赖与打包态误阻断；操作失败现在提供可见提示；完善完整包、商业版流程与授权使用记录。",
-  "published_at": "2026-07-10T18:54:17Z"
+  "notes": "6D v0.6.1：新增全参账号 TXT/JSON 一键转换为 6段协议号；修复 messKey1 33字节前缀和短 ID 兼容解析；已通过模拟器1导入实测。",
+  "published_at": "2026-08-03T06:58:36Z"
 }
